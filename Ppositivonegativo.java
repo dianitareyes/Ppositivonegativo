@@ -23,5 +23,14 @@ public class Ppositivonegativo {
                 countNegativos++;
             }
         }
+
+
+        double promedioPositivos = countPositivos > 0 ? (double) sumaPositivos / countPositivos : 0;
+        double promedioNegativos = countNegativos > 0 ? (double) sumaNegativos / countNegativos : 0;
+
+        System.out.printf("Promedio de positivos: %.2f%n", promedioPositivos);
+        System.out.printf("Promedio de negativos: %.2f%n", promedioNegativos);
+
+        scanner.close();
     }
 } 
